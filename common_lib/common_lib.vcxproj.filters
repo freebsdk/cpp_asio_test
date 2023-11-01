@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{dea9d918-9495-457c-a4fb-d1e86d5e07de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{7f317acf-5777-4c1f-b5ab-6d707afbc514}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -22,7 +28,19 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="config_manager.h">
-      <Filter>Source Files</Filter>
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="abstract_config_loader.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="json_config_loader.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="args_config_loader.h">
+      <Filter>config</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -33,7 +51,16 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="config_manager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="json_config_loader.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="args_config_loader.cpp">
+      <Filter>config</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
