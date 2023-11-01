@@ -4,9 +4,6 @@
 using boost::asio::ip::tcp;
 
 
-
-
-
 class tcp_server
 {
 public:

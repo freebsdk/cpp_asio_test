@@ -5,6 +5,10 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AsioServerTest2", "AsioServerTest2\AsioServerTest2.vcxproj", "{74BAF668-2ECB-4848-892B-147523F70E06}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common_lib", "common_lib\common_lib.vcxproj", "{1A510255-5FFE-4A69-8DE0-70E2CE611105}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unit_test", "unit_test\unit_test.vcxproj", "{C50141D8-9414-4489-89BE-AA64D4922EBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +25,22 @@ Global
 		{74BAF668-2ECB-4848-892B-147523F70E06}.Release|x64.Build.0 = Release|x64
 		{74BAF668-2ECB-4848-892B-147523F70E06}.Release|x86.ActiveCfg = Release|Win32
 		{74BAF668-2ECB-4848-892B-147523F70E06}.Release|x86.Build.0 = Release|Win32
+		{1A510255-5FFE-4A69-8DE0-70E2CE611105}.Debug|x64.ActiveCfg = Debug|x64
+		{1A510255-5FFE-4A69-8DE0-70E2CE611105}.Debug|x64.Build.0 = Debug|x64
+		{1A510255-5FFE-4A69-8DE0-70E2CE611105}.Debug|x86.ActiveCfg = Debug|Win32
+		{1A510255-5FFE-4A69-8DE0-70E2CE611105}.Debug|x86.Build.0 = Debug|Win32
+		{1A510255-5FFE-4A69-8DE0-70E2CE611105}.Release|x64.ActiveCfg = Release|x64
+		{1A510255-5FFE-4A69-8DE0-70E2CE611105}.Release|x64.Build.0 = Release|x64
+		{1A510255-5FFE-4A69-8DE0-70E2CE611105}.Release|x86.ActiveCfg = Release|Win32
+		{1A510255-5FFE-4A69-8DE0-70E2CE611105}.Release|x86.Build.0 = Release|Win32
+		{C50141D8-9414-4489-89BE-AA64D4922EBD}.Debug|x64.ActiveCfg = Debug|x64
+		{C50141D8-9414-4489-89BE-AA64D4922EBD}.Debug|x64.Build.0 = Debug|x64
+		{C50141D8-9414-4489-89BE-AA64D4922EBD}.Debug|x86.ActiveCfg = Debug|Win32
+		{C50141D8-9414-4489-89BE-AA64D4922EBD}.Debug|x86.Build.0 = Debug|Win32
+		{C50141D8-9414-4489-89BE-AA64D4922EBD}.Release|x64.ActiveCfg = Release|x64
+		{C50141D8-9414-4489-89BE-AA64D4922EBD}.Release|x64.Build.0 = Release|x64
+		{C50141D8-9414-4489-89BE-AA64D4922EBD}.Release|x86.ActiveCfg = Release|Win32
+		{C50141D8-9414-4489-89BE-AA64D4922EBD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

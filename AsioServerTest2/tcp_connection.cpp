@@ -1,10 +1,16 @@
 #include "tcp_connection.h"
 
 
+
+
+
+
 tcp_connection::~tcp_connection()
 {
 
 }
+
+
 
 
 tcp::socket& tcp_connection::socket()
@@ -13,10 +19,14 @@ tcp::socket& tcp_connection::socket()
 }
 
 
+
+
 void tcp_connection::on_accepted()
 {
     read();
 }
+
+
 
 
 tcp_connection::tcp_connection(boost::asio::io_context& io_context)
@@ -24,6 +34,8 @@ tcp_connection::tcp_connection(boost::asio::io_context& io_context)
 {
 
 }
+
+
 
 
 void tcp_connection::write(__in const void* data, __in const size_t size)
@@ -38,10 +50,14 @@ void tcp_connection::write(__in const void* data, __in const size_t size)
 }
 
 
+
+
 void tcp_connection::on_write_complete(const boost::system::error_code& /*error*/,
 	size_t /*bytes_transferred*/)
 {
 }
+
+
 
 
 void tcp_connection::read()
@@ -55,7 +71,6 @@ void tcp_connection::read()
 			boost::asio::placeholders::bytes_transferred)
 	);
 }
-
 
 
 
@@ -76,6 +91,8 @@ void tcp_connection::on_read_complete(__in const boost::system::error_code& erro
 }
 
 
+
+
 void tcp_connection::close()
 {
 	if (socket_.is_open())
@@ -84,3 +101,7 @@ void tcp_connection::close()
 		socket_.close();
 	}
 }
+
+
+
+
