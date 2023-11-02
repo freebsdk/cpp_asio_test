@@ -142,6 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="args_config_loader.h" />
+    <ClInclude Include="config_load_helper.h" />
     <ClInclude Include="config_manager.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="abstract_config_loader.h" />
@@ -152,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="args_config_loader.cpp" />
     <ClCompile Include="common_lib.cpp" />
+    <ClCompile Include="config_load_helper.cpp" />
     <ClCompile Include="config_manager.cpp" />
     <ClCompile Include="json_config_loader.cpp" />
     <ClCompile Include="log.cpp" />

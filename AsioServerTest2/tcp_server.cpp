@@ -1,11 +1,15 @@
 #include "tcp_server.h"
 
 
+
+
 tcp_server::tcp_server(boost::asio::io_context& io_context)
 	: io_context_(io_context), acceptor_(io_context, tcp::endpoint(tcp::v4(), 9090))
 {
 	start_accept();
 }
+
+
 
 
 void tcp_server::start_accept()
@@ -19,6 +23,8 @@ void tcp_server::start_accept()
 }
 
 
+
+
 void tcp_server::on_complete_accept(tcp_connection::pointer new_connection,
     const boost::system::error_code& error)
 {
@@ -26,19 +32,6 @@ void tcp_server::on_complete_accept(tcp_connection::pointer new_connection,
     {
         new_connection->on_accepted();
         conn.push_back(new_connection); // for test only
-    }
-
-    start_accept();
-}
-
-
-void tcp_server::on_complete_accept(tcp_connection::pointer new_connection,
-    const boost::system::error_code& error)
-{
-    if (!error)
-    {
-        new_connection->on_accepted();
-        conn.push_back(new_connection);
     }
 
     start_accept();

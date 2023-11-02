@@ -9,7 +9,7 @@
 namespace common_lib
 {
 
-	class json_config_loader : abstract_config_loader
+	class json_config_loader : public abstract_config_loader
 	{
 	private:
 

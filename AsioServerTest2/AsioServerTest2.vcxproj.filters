@@ -13,27 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{8ef214b2-5c60-4537-b2b9-7f188294a27c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="tcp_server.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="tcp_connection.h">
+      <Filter>server</Filter>
     </ClInclude>
-    <ClInclude Include="config_helper.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="tcp_server.h">
+      <Filter>server</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="tcp_connection.h">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
     <ClCompile Include="tcp_connection.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp_server.cpp">
+      <Filter>server</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

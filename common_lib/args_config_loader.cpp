@@ -9,8 +9,8 @@
 using namespace common_lib;
 
 args_config_loader::args_config_loader(int argc, char* argv[])
-	: argc_(argc)
 {
+	argc_ = argc;
 	for (int i = 1; i < argc; ++i)
 	{
 		argv_vec_.push_back(argv[i]);

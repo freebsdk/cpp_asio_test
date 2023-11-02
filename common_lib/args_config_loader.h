@@ -7,7 +7,7 @@
 
 namespace common_lib
 {
-	class args_config_loader : abstract_config_loader
+	class args_config_loader : public abstract_config_loader
 	{
 	private:
 
@@ -22,8 +22,4 @@ namespace common_lib
 		void Load() override;
 
 	};
-
-
-
-
 }

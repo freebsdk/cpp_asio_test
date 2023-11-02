@@ -42,6 +42,9 @@
     <ClInclude Include="args_config_loader.h">
       <Filter>config</Filter>
     </ClInclude>
+    <ClInclude Include="config_load_helper.h">
+      <Filter>config</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="common_lib.cpp">
@@ -60,6 +63,9 @@
       <Filter>log</Filter>
     </ClCompile>
     <ClCompile Include="args_config_loader.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config_load_helper.cpp">
       <Filter>config</Filter>
     </ClCompile>
   </ItemGroup>

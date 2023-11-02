@@ -130,14 +130,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="config_helper.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="tcp_connection.h" />
     <ClInclude Include="tcp_server.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="tcp_connection.cpp" />
-    <ClCompile Include="tcp_connection.h" />
+    <ClCompile Include="tcp_server.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\common_lib\common_lib.vcxproj">
